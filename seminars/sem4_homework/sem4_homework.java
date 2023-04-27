@@ -19,9 +19,11 @@ public class sem4_homework{
             while (scan.hasNextLine()) {
                 System.out.print(scan.nextLine());
             }
-       
-        fr.close();
+        
+        
         scan.close();
+        fr.close();
+        
 
 //2.Загрузить из файла многострочный текст формата ФИО возраст и пол через пробелы. Разбить по строкам и вывести в консоль в формате "Иванов И.И. 32 М"
     System.out.println("\n\n 2.Загрузить из файла многострочный текст формата ФИО возраст и пол через пробелы. Разбить по строкам и вывести в консоль в формате \"Иванов И.И. 32 М\" \n ");
@@ -68,19 +70,6 @@ public class sem4_homework{
     System.out.println("list of age" + list_age);
     System.out.println("list of gender" + list_gender);
     //System.out.println("list of id" + list_id);
-
-  
-    list_fio.sort(new Comparator<String>(){
-        public int compare(String o1, String o2){
-            
-            int o11 = Integer.parseInt(o1.split(" ")[3]);
-            int o22 = Integer.parseInt(o2.split(" ")[3]);
-            
-            return o11 - o22;
-
-            }
-        });
-    //System.out.println(list_fio);
 
 //4.Отсортировать по возрасту используя дополнительный список индексов.
     System.out.println("\n 4.Отсортировать по возрасту используя дополнительный список индексов.");
